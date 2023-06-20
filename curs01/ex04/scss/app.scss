@@ -1,0 +1,27 @@
+body {
+  background: greenyellow;
+}
+
+.shazam {
+  color: red;
+
+  .product-tile {
+    text-align: center;
+
+    .product-image {
+      display: block;
+    }
+
+    .product-pricing {
+      font-size: 24px;
+
+      a {
+        font-weight: bold;
+
+        &:hover {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
