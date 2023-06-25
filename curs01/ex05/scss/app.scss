@@ -2,6 +2,10 @@ $cHover: red;
 $cActive: purple;
 $cGreen: green;
 
+$vHover: magenta;
+$vActive: pink;
+$vVisited: lightcoral;
+
 ul {
   a {
     text-decoration: none;
@@ -37,4 +41,26 @@ ul {
     width: 100%;
     padding: 10px 20px;
   }
+}
+
+ol {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $vHover;
+    }
+
+    &:active {
+      color: $vActive;
+    }
+
+    &:visited {
+      color: $vVisited;
+    }
+  }
+}
+
+.all-visited a {
+  text-decoration: line-through;
 }
