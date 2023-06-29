@@ -37,3 +37,15 @@
   color: #fff;
 }
 /* please do not modify this code */
+
+.flex-container-04 {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-container-06 {
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+}
