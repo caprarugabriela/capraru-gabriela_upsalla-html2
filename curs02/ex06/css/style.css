@@ -22,8 +22,8 @@
   border-style: dashed;
 }
 
-.b-doubled {
-  border-style: doubled;
+.b-double {
+  border-style: double;
 }
 
 .b-none {
@@ -48,6 +48,26 @@
 
 .m-xl {
   margin: 64px;
+}
+
+.p-xs {
+  padding: 4px;
+}
+
+.p-sm {
+  padding: 8px;
+}
+
+.p-md {
+  padding: 16px;
+}
+
+.p-lg {
+  padding: 32px;
+}
+
+.p-xl {
+  padding: 64px;
 }
 
 /*# sourceMappingURL=style.css.map */
