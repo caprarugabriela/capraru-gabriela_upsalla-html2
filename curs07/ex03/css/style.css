@@ -58,10 +58,10 @@ animation01 {
 
 @keyframes bounce {
   from {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   to {
-    transform: translateY(-10px);
+    transform: translateX(-10px);
   }
 }

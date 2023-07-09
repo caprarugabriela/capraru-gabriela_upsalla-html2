@@ -49,6 +49,28 @@ body {
 }
 /* please do not modify this code */
 
+.flex-container-01 {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.flex-container-01 :nth-last-child(1) {
+  flex-grow: 1;
+}
+
+.flex-container-01 :nth-child(3) {
+  flex-grow: 2;
+}
+
+.flex-container-02 {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex-container-02 :nth-child(2) {
+  flex-grow: 1;
+}
+
 .flex-container-03 {
   flex-direction: column-reverse;
   align-items: flex-end;
@@ -62,6 +84,15 @@ body {
   flex-grow: 1;
 }
 
+.flex-container-04 {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex-container-04 :nth-child(2) {
+  flex-grow: 1;
+}
+
 .flex-container-05 {
   flex-direction: column-reverse;
   align-items: center;
@@ -72,5 +103,14 @@ body {
 }
 
 .flex-container-05 > .two + .flex-item {
+  flex-grow: 1;
+}
+
+.flex-container-06 {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flex-container-06 :last-child {
   flex-grow: 1;
 }
