@@ -24,6 +24,7 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
     crossorigin="anonymous"
   >
+
 </head>
 
 <body>
@@ -70,8 +71,22 @@
                 required
               ></textarea>
             </div>
-          </div>
 
+            <div class="input-group">
+              <label
+                for="description-short"
+                class="input-group-text align-items-start"
+              >Descriere scurta * </label>
+              <textarea
+                name="description-short"
+                id="description-short"
+                rows="8"
+                class="form-control"
+                placeholder="Descrierea scurta *"
+                required
+              ></textarea>
+            </div>
+          </div>
 
           <div class="col-lg-6 mt-3 mt-lg-0 flex-column gap-4 d-flex">
             <div>
@@ -105,13 +120,247 @@
         </div>
       </section>
       <!-- ./general -->
-      <section class="author"></section>
+      <section class="author container">
+        <header class="mb-2">
+          <h2 class="mb-2">Autor (optional)</h2>
+
+          <div class="form-check form-switch">
+            <input
+              type="checkbox"
+              name="author-enabled"
+              id="author-enabled"
+              class="form-check-input"
+              checked
+            >
+            <label
+              for="author-enabled"
+              class="form-check-label"
+            >Adauga Autor</label>
+          </div>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column gap-3">
+            <div class="input-group">
+              <label
+                for="author-name"
+                class="input-group-text"
+              >Numele autorului *</label>
+              <input
+                type="text"
+                name="author-name"
+                id="author-name"
+                class="form-control"
+                placeholder="Numele autorului *"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="author-surname"
+                class="input-group-text"
+              >Prenumele autorului *</label>
+              <input
+                type="text"
+                name="author-surname"
+                id="author-surname"
+                class="form-control"
+                placeholder="Prenumele autorului *"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="author-email"
+                class="input-group-text"
+              >Email *</label>
+              <input
+                type="email"
+                name="author-email"
+                id="author-email"
+                class="form-control"
+                placeholder="Email *"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-3 mt-lg-0 flex-column gap-4 d-flex">
+            <div>
+              <div class="input-group">
+                <label
+                  for="author-website"
+                  class="input-group-text"
+                >Website *</label>
+                <input
+                  type="text"
+                  name="author-website"
+                  id="author-website"
+                  class="form-control"
+                  placeholder="Website *"
+                  required
+                >
+              </div>
+            </div>
+          </div>
+      </section>
       <!-- ./author -->
-      <section class="ingredients"></section>
+      <section class="ingredients container">
+        <header class="mb-3">
+          <h1>Ingrediente</h1>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column gap-3">
+            <div class="input-group">
+              <label
+                for="recipe-ingredients"
+                class="input-group-text"
+              >Nume ingredient *</label>
+              <input
+                type="text"
+                name="recipe-ingredients"
+                id="recipe-ingredients"
+                class="form-control"
+                placeholder="Nume ingredient *"
+                required
+              >
+              <button
+                type="button"
+                class="btn btn-primary"
+              >Adauga</button>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+            <h3>Lista Ingrediente</h3>
+            <ul>
+              <li>10g ulei
+                <button
+                  type="button"
+                  title="Editeaza"
+                  class="btn btn-primary btn-sm"
+                >Editeaza</button>
+                <button
+                  type="button"
+                  title="Sterge"
+                  class="btn btn-danger btn-sm"
+                >Sterge</button>
+              </li>
+
+              <li>200g ceapa
+                <button
+                  type="button"
+                  title="Editeaza"
+                  class="btn btn-primary btn-sm"
+                >Editeaza</button>
+                <button
+                  type="button"
+                  title="Sterge"
+                  class="btn btn-danger btn-sm"
+                >Sterge</button>
+              </li>
+
+              <li>200g ardei gras
+                <button
+                  type="button"
+                  title="Editeaza"
+                  class="btn btn-primary btn-sm"
+                >Editeaza</button>
+                <button
+                  type="button"
+                  title="Sterge"
+                  class="btn btn-danger btn-sm"
+                >Sterge</button>
+              </li>
+            </ul>
+          </div>
+
+      </section>
       <!-- ./ingredients -->
-      <section class="steps"></section>
+      <section class="steps container">
+        <header class="mb-3">
+          <h1>Pasi</h1>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column gap-3">
+            <div class="input-group">
+              <label
+                for="title-step"
+                class="input-group-text"
+              >Titlu pas *</label>
+              <input
+                type="text"
+                name="title-step"
+                id="title-step"
+                class="form-control"
+                placeholder="Titlu pas *"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="subtitle-step"
+                class="input-group-text"
+              >Subtitlu pas *</label>
+              <input
+                type="text"
+                name="subtitle-step"
+                id="subtitle-step"
+                class="form-control"
+                placeholder="Subtitlu pas *"
+                required
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="description-step"
+                class="input-group-text align-items-start"
+              >Descriere pas * </label>
+              <textarea
+                name="description-step"
+                id="description-step"
+                rows="8"
+                class="form-control"
+                placeholder="Descrierea pas *"
+                required
+              ></textarea>
+
+            </div>
+            <div class="text-end mb-4">
+              <button
+                type="button"
+                class="btn btn-outline-danger"
+                title="Reseteaza"
+              >Reseteaza</button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                title="Adauga pas"
+              >Adauga pas</button>
+            </div>
+          </div>
+      </section>
       <!-- ./steps -->
-      <section class="controls"></section>
+      <section class="controls container">
+        <div class="text-center">
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            title="Reseteaza tot"
+          >Reseteaza</button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            title="Trimite reteta"
+          >Adauga pas</button>
+        </div>
+      </section>
       <!-- ./controls -->
     </form>
 
