@@ -6,6 +6,12 @@ $vHover: magenta;
 $vActive: pink;
 $vVisited: lightcoral;
 
+a {
+  .all-visited & {
+    text-decoration: line-through;
+  }
+}
+
 ul {
   a {
     text-decoration: none;
@@ -59,8 +65,4 @@ ol {
       color: $vVisited;
     }
   }
-}
-
-.all-visited a {
-  text-decoration: line-through;
 }

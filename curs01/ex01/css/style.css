@@ -30,6 +30,14 @@ body {
   background-color: lightpink;
 }
 
+body > h2 {
+  display: none;
+}
+
+body > h3 {
+  display: none;
+}
+
 /* pana in 576px */
 @media (max-width: 576px) {
   body {

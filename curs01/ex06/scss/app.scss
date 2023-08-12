@@ -19,6 +19,9 @@
   background: $color;
 }
 
+@mixin circle-bg($color: turquoise) {
+  background-color: $color;
+}
 .square {
   @include square();
 }
@@ -48,10 +51,7 @@
   width: 200px;
   height: 200px;
   background: purple;
-}
-
-@mixin circle-bg($color: turquoise) {
-  background-color: $color;
+  @include circle-bg(purple);
 }
 
 .circle-red {

@@ -60,3 +60,13 @@
   grid-column: -2 / span 1;
   grid-row: 1 / -1;
 }
+
+.grid-item-4 {
+  justify-self: center;
+  align-self: center;
+}
+
+.grid-item-5 {
+  justify-self: center;
+  align-self: end;
+}

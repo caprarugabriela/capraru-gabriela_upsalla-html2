@@ -1,3 +1,7 @@
+.all-visited a {
+  text-decoration: line-through;
+}
+
 ul a {
   text-decoration: none;
 }
@@ -39,10 +43,6 @@ ol a:active {
 }
 ol a:visited {
   color: lightcoral;
-}
-
-.all-visited a {
-  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=style.css.map */

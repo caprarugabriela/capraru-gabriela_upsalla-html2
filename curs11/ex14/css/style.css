@@ -61,3 +61,13 @@
       'footer';
   }
 }
+
+@media (min-width: 769px) {
+  .grid-container {
+    grid-template-areas:
+      'header . header'
+      'sidebar . content'
+      'footer footer .';
+    grid-template-columns: 320px 30px 2fr;
+  }
+}
